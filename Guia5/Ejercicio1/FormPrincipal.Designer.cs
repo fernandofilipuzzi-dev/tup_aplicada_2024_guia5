@@ -33,7 +33,7 @@
             this.btnIniciarPrespuesto = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.tbNombre = new System.Windows.Forms.TextBox();
-            this.gbConsumos = new System.Windows.Forms.GroupBox();
+            this.gbProductos = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,18 +41,18 @@
             this.rbMesa = new System.Windows.Forms.RadioButton();
             this.rbBanco = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbGrosor = new System.Windows.Forms.TextBox();
+            this.tbLargo = new System.Windows.Forms.TextBox();
+            this.tbCodigo = new System.Windows.Forms.TextBox();
             this.tbAncho = new System.Windows.Forms.TextBox();
-            this.tbPrecio = new System.Windows.Forms.TextBox();
-            this.gbCargaConsumos = new System.Windows.Forms.GroupBox();
+            this.tbPrecioBase = new System.Windows.Forms.TextBox();
+            this.gbCliente = new System.Windows.Forms.GroupBox();
             this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbDireccion = new System.Windows.Forms.TextBox();
+            this.tbDir = new System.Windows.Forms.TextBox();
             this.lbDescripcionPeriodo = new System.Windows.Forms.Label();
-            this.gbConsumos.SuspendLayout();
-            this.gbCargaConsumos.SuspendLayout();
+            this.gbProductos.SuspendLayout();
+            this.gbCliente.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrarPresupuesto
@@ -107,30 +107,29 @@
             this.tbNombre.Size = new System.Drawing.Size(152, 26);
             this.tbNombre.TabIndex = 11;
             // 
-            // gbConsumos
+            // gbProductos
             // 
-            this.gbConsumos.Controls.Add(this.label6);
-            this.gbConsumos.Controls.Add(this.label5);
-            this.gbConsumos.Controls.Add(this.label4);
-            this.gbConsumos.Controls.Add(this.label3);
-            this.gbConsumos.Controls.Add(this.rbMesa);
-            this.gbConsumos.Controls.Add(this.rbBanco);
-            this.gbConsumos.Controls.Add(this.label2);
-            this.gbConsumos.Controls.Add(this.textBox6);
-            this.gbConsumos.Controls.Add(this.textBox5);
-            this.gbConsumos.Controls.Add(this.textBox4);
-            this.gbConsumos.Controls.Add(this.tbAncho);
-            this.gbConsumos.Controls.Add(this.tbPrecio);
-            this.gbConsumos.Controls.Add(this.btnAgregar);
-            this.gbConsumos.Enabled = false;
-            this.gbConsumos.Location = new System.Drawing.Point(319, 14);
-            this.gbConsumos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbConsumos.Name = "gbConsumos";
-            this.gbConsumos.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbConsumos.Size = new System.Drawing.Size(365, 225);
-            this.gbConsumos.TabIndex = 12;
-            this.gbConsumos.TabStop = false;
-            this.gbConsumos.Text = "Productos";
+            this.gbProductos.Controls.Add(this.label6);
+            this.gbProductos.Controls.Add(this.label5);
+            this.gbProductos.Controls.Add(this.label4);
+            this.gbProductos.Controls.Add(this.label3);
+            this.gbProductos.Controls.Add(this.rbMesa);
+            this.gbProductos.Controls.Add(this.rbBanco);
+            this.gbProductos.Controls.Add(this.label2);
+            this.gbProductos.Controls.Add(this.tbGrosor);
+            this.gbProductos.Controls.Add(this.tbLargo);
+            this.gbProductos.Controls.Add(this.tbCodigo);
+            this.gbProductos.Controls.Add(this.tbAncho);
+            this.gbProductos.Controls.Add(this.tbPrecioBase);
+            this.gbProductos.Controls.Add(this.btnAgregar);
+            this.gbProductos.Location = new System.Drawing.Point(319, 14);
+            this.gbProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbProductos.Name = "gbProductos";
+            this.gbProductos.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbProductos.Size = new System.Drawing.Size(365, 225);
+            this.gbProductos.TabIndex = 12;
+            this.gbProductos.TabStop = false;
+            this.gbProductos.Text = "Productos";
             // 
             // label6
             // 
@@ -204,29 +203,29 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Precio B:";
             // 
-            // textBox6
+            // tbGrosor
             // 
-            this.textBox6.Location = new System.Drawing.Point(261, 68);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(92, 26);
-            this.textBox6.TabIndex = 19;
+            this.tbGrosor.Location = new System.Drawing.Point(261, 68);
+            this.tbGrosor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbGrosor.Name = "tbGrosor";
+            this.tbGrosor.Size = new System.Drawing.Size(92, 26);
+            this.tbGrosor.TabIndex = 19;
             // 
-            // textBox5
+            // tbLargo
             // 
-            this.textBox5.Location = new System.Drawing.Point(261, 29);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(92, 26);
-            this.textBox5.TabIndex = 18;
+            this.tbLargo.Location = new System.Drawing.Point(261, 29);
+            this.tbLargo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbLargo.Name = "tbLargo";
+            this.tbLargo.Size = new System.Drawing.Size(92, 26);
+            this.tbLargo.TabIndex = 18;
             // 
-            // textBox4
+            // tbCodigo
             // 
-            this.textBox4.Location = new System.Drawing.Point(82, 104);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(92, 26);
-            this.textBox4.TabIndex = 17;
+            this.tbCodigo.Location = new System.Drawing.Point(82, 104);
+            this.tbCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbCodigo.Name = "tbCodigo";
+            this.tbCodigo.Size = new System.Drawing.Size(92, 26);
+            this.tbCodigo.TabIndex = 17;
             // 
             // tbAncho
             // 
@@ -236,33 +235,32 @@
             this.tbAncho.Size = new System.Drawing.Size(92, 26);
             this.tbAncho.TabIndex = 16;
             // 
-            // tbPrecio
+            // tbPrecioBase
             // 
-            this.tbPrecio.Location = new System.Drawing.Point(82, 29);
-            this.tbPrecio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbPrecio.Name = "tbPrecio";
-            this.tbPrecio.Size = new System.Drawing.Size(92, 26);
-            this.tbPrecio.TabIndex = 12;
+            this.tbPrecioBase.Location = new System.Drawing.Point(82, 29);
+            this.tbPrecioBase.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbPrecioBase.Name = "tbPrecioBase";
+            this.tbPrecioBase.Size = new System.Drawing.Size(92, 26);
+            this.tbPrecioBase.TabIndex = 12;
             // 
-            // gbCargaConsumos
+            // gbCliente
             // 
-            this.gbCargaConsumos.Controls.Add(this.cmbProducto);
-            this.gbCargaConsumos.Controls.Add(this.label1);
-            this.gbCargaConsumos.Controls.Add(this.tbDireccion);
-            this.gbCargaConsumos.Controls.Add(this.lbDescripcionPeriodo);
-            this.gbCargaConsumos.Controls.Add(this.tbNombre);
-            this.gbCargaConsumos.Controls.Add(this.btnCerrarPresupuesto);
-            this.gbCargaConsumos.Controls.Add(this.btnBorrarProducto);
-            this.gbCargaConsumos.Controls.Add(this.btnIniciarPrespuesto);
-            this.gbCargaConsumos.Enabled = false;
-            this.gbCargaConsumos.Location = new System.Drawing.Point(13, 14);
-            this.gbCargaConsumos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbCargaConsumos.Name = "gbCargaConsumos";
-            this.gbCargaConsumos.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbCargaConsumos.Size = new System.Drawing.Size(298, 225);
-            this.gbCargaConsumos.TabIndex = 11;
-            this.gbCargaConsumos.TabStop = false;
-            this.gbCargaConsumos.Text = "Cliente";
+            this.gbCliente.Controls.Add(this.cmbProducto);
+            this.gbCliente.Controls.Add(this.label1);
+            this.gbCliente.Controls.Add(this.tbDir);
+            this.gbCliente.Controls.Add(this.lbDescripcionPeriodo);
+            this.gbCliente.Controls.Add(this.tbNombre);
+            this.gbCliente.Controls.Add(this.btnCerrarPresupuesto);
+            this.gbCliente.Controls.Add(this.btnBorrarProducto);
+            this.gbCliente.Controls.Add(this.btnIniciarPrespuesto);
+            this.gbCliente.Location = new System.Drawing.Point(13, 14);
+            this.gbCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbCliente.Name = "gbCliente";
+            this.gbCliente.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbCliente.Size = new System.Drawing.Size(298, 225);
+            this.gbCliente.TabIndex = 11;
+            this.gbCliente.TabStop = false;
+            this.gbCliente.Text = "Cliente";
             // 
             // cmbProducto
             // 
@@ -282,13 +280,13 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Direccion";
             // 
-            // tbDireccion
+            // tbDir
             // 
-            this.tbDireccion.Location = new System.Drawing.Point(91, 65);
-            this.tbDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbDireccion.Name = "tbDireccion";
-            this.tbDireccion.Size = new System.Drawing.Size(152, 26);
-            this.tbDireccion.TabIndex = 13;
+            this.tbDir.Location = new System.Drawing.Point(91, 65);
+            this.tbDir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbDir.Name = "tbDir";
+            this.tbDir.Size = new System.Drawing.Size(152, 26);
+            this.tbDir.TabIndex = 13;
             // 
             // lbDescripcionPeriodo
             // 
@@ -305,17 +303,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 252);
-            this.Controls.Add(this.gbConsumos);
-            this.Controls.Add(this.gbCargaConsumos);
+            this.Controls.Add(this.gbProductos);
+            this.Controls.Add(this.gbCliente);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 1";
-            this.gbConsumos.ResumeLayout(false);
-            this.gbConsumos.PerformLayout();
-            this.gbCargaConsumos.ResumeLayout(false);
-            this.gbCargaConsumos.PerformLayout();
+            this.gbProductos.ResumeLayout(false);
+            this.gbProductos.PerformLayout();
+            this.gbCliente.ResumeLayout(false);
+            this.gbCliente.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -327,17 +325,17 @@
         private System.Windows.Forms.Button btnIniciarPrespuesto;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox tbNombre;
-        private System.Windows.Forms.GroupBox gbCargaConsumos;
-        private System.Windows.Forms.GroupBox gbConsumos;
+        private System.Windows.Forms.GroupBox gbCliente;
+        private System.Windows.Forms.GroupBox gbProductos;
         private System.Windows.Forms.Label lbDescripcionPeriodo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbDireccion;
+        private System.Windows.Forms.TextBox tbDir;
         private System.Windows.Forms.ComboBox cmbProducto;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbLargo;
+        private System.Windows.Forms.TextBox tbCodigo;
         private System.Windows.Forms.TextBox tbAncho;
-        private System.Windows.Forms.TextBox tbPrecio;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbPrecioBase;
+        private System.Windows.Forms.TextBox tbGrosor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rbMesa;
         private System.Windows.Forms.RadioButton rbBanco;

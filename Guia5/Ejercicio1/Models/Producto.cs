@@ -3,19 +3,27 @@ using System;
 
 namespace Ejercicio1.Models
 {
-    abstract public class Producto:IComparable
+    abstract public class Producto : IComparable
     {
         protected double precioBase;
         protected double largo;
         private int codigo;
 
-        public int Codigo{ get { return codigo; }
-            set { codigo = value; } }
-     
+        public int Codigo
+        {
+            get
+            {
+                return codigo;
+            }
+            set
+            {
+                codigo = value;
+            }
+        }
 
         public Producto(double precio, double largo)
         {
-             this.precioBase = precio;
+            this.precioBase = precio;
             this.largo = largo;
         }
 
@@ -29,7 +37,10 @@ namespace Ejercicio1.Models
 
         public int CompareTo(object obj)
         {
-            throw new NotImplementedException();
+            Producto otro = obj as Producto;
+            if(otro!=null)
+                return codigo.CompareTo(otro.codigo);
+            return 1;
         }
     }
 }
