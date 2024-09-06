@@ -9,7 +9,7 @@ namespace Ejercicio1.Models
         public Mesa(double precio, double largo,  double ancho,  double grosor) : base(precio, largo)
         {
             this.ancho = ancho;
-            this.ancho = grosor;
+            this.grosor = grosor;
         }
 
         //El peso de la mesa se calcula con densidad de 0,3 Kg/m3: peso = (largo*ancho*grosor) * 0.3

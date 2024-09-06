@@ -15,27 +15,34 @@ namespace Ejercicio1
 
         private void btnCerrarPresupuesto_Click(object sender, EventArgs e)
         {
-            /*Implemente el botón Cerrar pedido que cierre el pedido e informe en pantalla el precio final.*/
-
-            //informando
-            string[] lista = pedido.Resumen();
-
-            FormVer fVer = new FormVer();
-
-            /*alternativa 1 para llenar un listbox*/
-            fVer.lbxVer.Items.AddRange(lista);
-
-            /*alternativa 2 para llenar un listbox
-            foreach (string linea in lista)
+            if (pedido != null)
             {
-                fVer.lbxVer.Items.Add(linea);
+                /*Implemente el botón Cerrar pedido que cierre el pedido e informe en pantalla el precio final.*/
+
+                //informando
+                string[] lista = pedido.Resumen();
+
+                FormVer fVer = new FormVer();
+
+                /*alternativa 1 para llenar un listbox*/
+                fVer.lbxVer.Items.AddRange(lista);
+
+                /*alternativa 2 para llenar un listbox
+                foreach (string linea in lista)
+                {
+                    fVer.lbxVer.Items.Add(linea);
+                }
+                */
+
+                fVer.ShowDialog();
+
+                cmbProducto.Items.Clear();
+                pedido = null;
             }
-            */
-
-            fVer.ShowDialog();
-
-            cmbProducto.Items.Clear();
-            pedido = null;
+            else
+            {
+                MessageBox.Show("cree el presupuesto");
+            }
         }
 
         private void btnBorrarProducto_Click(object sender, EventArgs e)

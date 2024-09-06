@@ -104,9 +104,9 @@ namespace Ejercicio1.Models
             result[n++]=solicitante.ToString();
             foreach (Producto p in listaProductos)
             {
-                result[n++]=p.ToString();
+                result[n++]=$"{p.Codigo} -Peso{p.Peso()}- Precio:${p.Precio():f2}"; //polimorfismo x 2
             }
-            result[n++] = $"Total: ${Precio}";
+            result[n++] = $"Total: ${Precio:f2}";
             return result;
         }
 
